@@ -49,6 +49,7 @@ public class App
         	getEncryptedValue(args[3], passSalt);
     	} else {
     		
+    		System.setProperty("webdriver.chrome.driver", args[3]);
     		String encryptedEmail = args[1];
     		String encryptedPasswd = args[2];
     		
